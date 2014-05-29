@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/driver_booking_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_no_stripes" >
+
+    <TextView
+        android:id="@+id/fromTextViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:text="From:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/toTextViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fromTextViewLabel"
+        android:layout_marginTop="45dp"
+        android:text="To:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/timeTextViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toTextViewLabel"
+        android:layout_marginTop="53dp"
+        android:text="Time:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/travellerNameTextViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="Traveller Name:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/travellerPhoneDetailsTextViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/travellerNameTextViewLabel"
+        android:layout_marginTop="44dp"
+        android:text="Traveller Phone:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/fromTextViewValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fromTextViewLabel"
+        android:layout_toRightOf="@+id/travellerNameTextViewLabel"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/toTextViewValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fromTextViewValue"
+        android:layout_alignTop="@+id/toTextViewLabel"
+        android:layout_toRightOf="@+id/toTextViewLabel"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/timeTextViewValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toTextViewValue"
+        android:layout_alignTop="@+id/timeTextViewLabel"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/timeTextViewLabel"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/travellerNameTextViewValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/travellerNameTextViewLabel"
+        android:layout_alignBottom="@+id/travellerNameTextViewLabel"
+        android:layout_alignLeft="@+id/timeTextViewValue"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/travellerPhoneTextViewValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/travellerPhoneDetailsTextViewLabel"
+        android:layout_alignLeft="@+id/travellerNameTextViewValue"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+    
+    
+    <Button
+        android:id="@+id/denyBookingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/acceptButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/travellerPhoneTextViewValue"
+        android:text="Deny" />
+        
+    <Button android:id="@+id/acceptButton" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Accept" 
+    android:layout_alignParentBottom="true"
+    android:layout_alignRight="@+id/travellerNameTextViewLabel"></Button>
+    
+    <Button android:id="@+id/pickedButton" android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" android:text="Picked" 
+    android:layout_alignParentBottom="true"
+    android:layout_alignLeft="@+id/travellerPhoneTextViewValue"
+    ></Button>
+    
+    <Button android:id="@+id/droppedButton" android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" android:text="Dropped" 
+    android:layout_alignParentBottom="true"
+    android:layout_alignLeft="@+id/travellerPhoneTextViewValue"></Button>
+
+</RelativeLayout>

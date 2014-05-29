@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/green" 
+    android:id="@+id/driver_dashboard">
+
+    <!-- <Button
+        android:id="@+id/updateStatusButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="56dp"
+        android:text="Update Status" /> -->
+
+    <!-- <Button
+        android:id="@+id/queuedBookingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/currentBookingButton"
+        android:layout_centerVertical="true"
+        android:text="Queued Booking" /> -->
+    <ImageButton android:src="@drawable/bookings_small" 
+    android:id="@+id/currentBookingButton" 
+    android:layout_height="80dp" 
+    android:layout_width="100dp" 
+    android:layout_alignParentTop="true" 
+    android:layout_centerHorizontal="true" 
+    android:layout_marginTop="48dp"></ImageButton>
+    
+    <RadioGroup android:layout_height="wrap_content" android:id="@+id/radioGroup1" android:layout_width="wrap_content" android:layout_below="@+id/currentBookingButton" android:layout_centerHorizontal="true" android:layout_marginTop="33dp">
+        <RadioButton android:layout_height="wrap_content" android:text="Free(Green)" android:checked="true" android:layout_width="wrap_content" android:id="@+id/free"></RadioButton>
+        <RadioButton android:layout_height="wrap_content" android:text="Waiting for Pickup(Yellow)" android:layout_width="wrap_content" android:id="@+id/waiting"></RadioButton>
+        <RadioButton android:layout_height="wrap_content" android:text="Busy(Red)" android:layout_width="wrap_content" android:id="@+id/busy"></RadioButton>        
+        <RadioButton android:layout_height="wrap_content" android:text="On the way(Blue)" android:layout_width="wrap_content" android:id="@+id/ontheway"></RadioButton>
+    </RadioGroup>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" 
+    android:text="Current Bookings:" android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" android:id="@+id/textView1" 
+    android:layout_alignTop="@+id/currentBookingButton" android:layout_toLeftOf="@+id/currentBookingButton" android:layout_marginTop="19dp"></TextView>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">IVikingTest</string>    
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_booking_details">BookingDetails</string>
+    <string name="service_name">"IVikingService"</string>
+
+
+   
+
+</resources>
